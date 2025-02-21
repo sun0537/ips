@@ -28,6 +28,7 @@ import (
 
 	"github.com/sjzar/ips/domainlist"
 	"github.com/sjzar/ips/format"
+	"github.com/sjzar/ips/format/czdb"
 	"github.com/sjzar/ips/format/mmdb"
 	"github.com/sjzar/ips/format/qqwry"
 	"github.com/sjzar/ips/internal/data"
@@ -375,6 +376,19 @@ func (m *Manager) createDatabaseReader(_format, file string) (format.Reader, err
 		option := mmdb.ReaderOption{
 			DisableExtraData: readerOptionArg.Get("disable_extra_data") == "true",
 			UseFullField:     readerOptionArg.Get("use_full_field") == "true",
+		}
+		if err := dbr.SetOption(option); err != nil {
+			log.Debug("reader.SetOption error: ", err)
+			return nil, err
+		}
+	case *czdb.Reader:
+		readerOptionArg, err := url.ParseQuery(m.Conf.ReaderOption)
+		if err != nil {
+			log.Debug("url.ParseQuery error: ", err)
+			return nil, err
+		}
+		option := czdb.ReaderOption{
+			Key: readerOptionArg.Get("key"),
 		}
 		if err := dbr.SetOption(option); err != nil {
 			log.Debug("reader.SetOption error: ", err)

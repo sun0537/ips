@@ -23,6 +23,7 @@ import (
 	"sync"
 
 	"github.com/sjzar/ips/format/awdb"
+	"github.com/sjzar/ips/format/czdb"
 	"github.com/sjzar/ips/format/ip2region"
 	"github.com/sjzar/ips/format/ipdb"
 	"github.com/sjzar/ips/format/mmdb"
@@ -78,6 +79,7 @@ var (
 		plain.DBFormat:     func(file string) (Reader, error) { return plain.NewReader(file) },
 		qqwry.DBFormat:     func(file string) (Reader, error) { return qqwry.NewReader(file) },
 		zxinc.DBFormat:     func(file string) (Reader, error) { return zxinc.NewReader(file) },
+		czdb.DBFormat:      func(file string) (Reader, error) { return czdb.NewReader(file) },
 	}
 	ReaderExts = map[string]func(string) (Reader, error){
 		awdb.DBExt:      func(file string) (Reader, error) { return awdb.NewReader(file) },
@@ -87,6 +89,7 @@ var (
 		plain.DBExt:     func(file string) (Reader, error) { return plain.NewReader(file) },
 		qqwry.DBExt:     func(file string) (Reader, error) { return qqwry.NewReader(file) },
 		zxinc.DBExt:     func(file string) (Reader, error) { return zxinc.NewReader(file) },
+		czdb.DBExt:      func(file string) (Reader, error) { return czdb.NewReader(file) },
 	}
 	ReaderCommonNames = map[string]func(string) (Reader, error){}
 )

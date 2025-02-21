@@ -33,6 +33,7 @@ var (
 	ErrMetaMissing            = errors.New("meta information missing")
 	ErrNilWriter              = errors.New("writer is not initialized")
 	ErrUnsupportedLanguage    = errors.New("unsupported language")
+	ErrKeyRequired            = errors.New("key is required for encrypted database, use `--database-option \"key=<your key>\"` or `--input-option \"key=<your key>\"` option to set")
 
 	// IPio
 

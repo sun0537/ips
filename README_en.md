@@ -50,6 +50,7 @@ brew install ips
 | mmdb      | ✅     | ✅    | ✅    | [Link](https://maxmind.com)                       |                        |
 | awdb      | ✅     | ✅    | -    | [Link](https://ipplus360.com)                     |                        |
 | qqwry     | ✅     | ✅    | -    | [Link](https://cz88.net)                          | IPv4 only              |
+| czdb      | ✅     | ✅    | -    | [Link](https://cz88.net)                          |                        |
 | zxinc     | ✅     | ✅    | -    | [Link](https://ip.zxinc.org)                      | IPv6 only              |
 | ip2region | ✅     | ✅    | -    | [Link](https://github.com/lionsoul2014/ip2region) | IPv4 only              |
 
@@ -127,7 +128,7 @@ ips pack -i qqwry.dat -f country -o country.ipdb
 * [IPIP.net](https://ipip.net) for the ipdb database format
 * [MaxMind](https://maxmind.com) for the mmdb database format
 * [埃文科技](https://ipplus360.com) for the awdb database format
-* [纯真网络](https://cz88.net) for the qqwry database format
+* [纯真网络](https://cz88.net) for the qqwry and czdb database format
 * [ip.zxinc.org](https://ip.zxinc.org) for the zxinc database format
 * [@lionsoul2014](https://github.com/lionsoul2014) for the [ip2region](https://github.com/lionsoul2014/ip2region) database format
 * [@zu1k](https://github.com/zu1k) for the [nali](https://github.com/zu1k/nali) project, from which this project's querying feature was inspired

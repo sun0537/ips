@@ -50,6 +50,7 @@ brew install ips
 | mmdb      | ✅  | ✅  | ✅  | [Link](https://maxmind.com)                       |           |
 | awdb      | ✅  | ✅  | -  | [Link](https://ipplus360.com)                     |           |
 | qqwry     | ✅  | ✅  | -  | [Link](https://cz88.net)                          | IPv4 only |
+| czdb      | ✅  | ✅  | -  | [Link](https://cz88.net)                          |           |
 | zxinc     | ✅  | ✅  | -  | [Link](https://ip.zxinc.org)                      | IPv6 only |
 | ip2region | ✅  | ✅  | -  | [Link](https://github.com/lionsoul2014/ip2region) | IPv4 only |
 
@@ -127,7 +128,7 @@ ips pack -i qqwry.dat -f country -o country.ipdb
 * [IPIP.net](https://ipip.net) 的 ipdb 数据库格式
 * [MaxMind](https://maxmind.com) 的 mmdb 数据库格式
 * [埃文科技](https://ipplus360.com) 的 awdb 数据库格式
-* [纯真网络](https://cz88.net) 的 qqwry 数据库格式
+* [纯真网络](https://cz88.net) 的 qqwry 和 czdb 数据库格式
 * [ip.zxinc.org](https://ip.zxinc.org) 的 zxinc 数据库格式
 * [@lionsoul2014](https://github.com/lionsoul2014) 的 [ip2region](https://github.com/lionsoul2014/ip2region) 数据库格式
 * [@zu1k](https://github.com/zu1k) 的 [nali](https://github.com/zu1k/nali) 项目，本项目查询功能参考了 nali 的方案
